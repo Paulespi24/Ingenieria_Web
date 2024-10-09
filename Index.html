@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración Básica de Git</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            padding: 20px;
+        }
+        .command {
+            background-color: #eee;
+            border-left: 5px solid #333;
+            padding: 10px;
+            margin: 10px 0;
+            font-family: "Courier New", Courier, monospace;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Configuración Básica de Git</h1>
+</header>
+
+<section>
+    <h2>1. Configurar tu Nombre de Usuario y Correo Electrónico en Git</h2>
+    <p>Antes de que puedas hacer commits, Git necesita que configures un nombre de usuario y un correo electrónico. Usa los siguientes comandos:</p>
+    <div class="command">
+        <code>git config --global user.name "Tu Nombre"</code>
+    </div>
+    <div class="command">
+        <code>git config --global user.email "tu.correo@ejemplo.com"</code>
+    </div>
+
+    <h2>2. Verificar la Configuración de Git</h2>
+    <p>Para verificar las configuraciones que acabas de hacer, puedes usar este comando:</p>
+    <div class="command">
+        <code>git config --list</code>
+    </div>
+
+    <h2>3. Cambiar el Editor de Texto por Defecto</h2>
+    <p>Git usa un editor de texto por defecto para los mensajes de commit. Puedes cambiarlo con el siguiente comando:</p>
+    <div class="command">
+        <code>git config --global core.editor "tu-editor"</code>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 - Centro de Aprendizaje Git</p>
+</footer>
+
+</body>
+</html>
